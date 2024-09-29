@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76140a3f-d788-4119-8b9c-e1fead905970" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example_1/Phone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example_1/PhoneTester.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example_2/DishWasher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example_2/DishWasherTester.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example_1/PhoneApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example_3/Bus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example_3/BusPark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/example_3/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example_1/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example_1/Phone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example_1/PhoneTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example_1/PhoneTester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/example_2/DishWasherTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example_2/DishWasherTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2mjhDgOLO8FtaLlcRoZA475v6rT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -46,11 +44,24 @@
     "Application.PhoneTester.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DishWasherTester">
+  <component name="RunManager" selected="Application.BusPark">
+    <configuration name="BusPark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="example_3.BusPark" />
+      <module name="paskaita_09" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example_3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DishWasherTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example_2.DishWasherTester" />
       <module name="paskaita_09" />
@@ -79,8 +90,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DishWasherTester" />
+        <item itemvalue="Application.BusPark" />
         <item itemvalue="Application.PhoneTester" />
+        <item itemvalue="Application.DishWasherTester" />
       </list>
     </recent_temporary>
   </component>
@@ -100,7 +112,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/example_1/Phone.java</url>
-          <line>8</line>
+          <line>12</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

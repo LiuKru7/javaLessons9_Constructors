@@ -19,7 +19,5 @@ public class DishWasherTester {
 
         siemens.printPrice();
         siemens.printBrand();
-
     }
-
 }
