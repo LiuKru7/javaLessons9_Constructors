@@ -14,6 +14,11 @@ public class FridgeMain {
         siemens.increaseFreezerTemp(4);
         siemens.decreaseFridgeTemp(4);
 
+        siemens.addProductFridge();
+
+
+
+
 
 
     }
