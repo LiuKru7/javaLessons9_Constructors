@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="76140a3f-d788-4119-8b9c-e1fead905970" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/example_1/PhoneApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example_3/Bus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example_3/BusPark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/example_3/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/home_work_example_1/Fridge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/home_work_example_1/FridgeMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example_1/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example_1/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example_1/PhoneTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example_1/PhoneTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/example_2/DishWasherTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/example_2/DishWasherTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +35,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BusPark.executor": "Run",
     "Application.DishWasherTester.executor": "Run",
+    "Application.FridgeMain.executor": "Run",
     "Application.PhoneTester.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -48,7 +45,7 @@
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BusPark">
+  <component name="RunManager" selected="Application.FridgeMain">
     <configuration name="BusPark" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example_3.BusPark" />
       <module name="paskaita_09" />
@@ -75,6 +72,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FridgeMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="home_work_example_1.FridgeMain" />
+      <module name="paskaita_09" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="home_work_example_1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PhoneTester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="example_1.PhoneTester" />
       <module name="paskaita_09" />
@@ -90,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FridgeMain" />
         <item itemvalue="Application.BusPark" />
         <item itemvalue="Application.PhoneTester" />
         <item itemvalue="Application.DishWasherTester" />
@@ -114,6 +125,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/example_1/Phone.java</url>
           <line>12</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/example_3/Bus.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
