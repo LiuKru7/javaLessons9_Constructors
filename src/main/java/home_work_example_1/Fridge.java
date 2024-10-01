@@ -12,9 +12,8 @@ public class Fridge {
     public int capacity;
     public double freezerTemp = -4;
     public double fridgeTemp = 2;
-//    public Products product;
     public List<Products> products = new ArrayList<>();
-
+    public boolean fridgeIsOpen = false;
 
     final public double MIN_FRIDGE_TEMP = 2;
     final public double MAX_FRIDGE_TEMP = 10;
@@ -108,28 +107,44 @@ public class Fridge {
         freezerTemp = desiredTemp;
 
     }
+    public void openFridge () {
+        if (fridgeIsOpen) {
+            fridgeIsOpen = false;
+            System.out.println("You close the fridge");
+        } else {
+            fridgeIsOpen = true;
+            System.out.println("You open the fridge");
+        }
+
+    }
+
 
     public void addProductFridge() {
-        boolean fridgeIsOpen = true;
         while (fridgeIsOpen) {
             Scanner scanner = new Scanner(System.in);
             System.out.println("C- Close, A-Add product: \n");
             String input = scanner.nextLine();
 
+
             if (input.equalsIgnoreCase("c")) {
-                      System.out.println("Fridge is close");
+                System.out.println("Fridge is close");
                 fridgeIsOpen = false;
                 return;
             }
 
             if (input.equalsIgnoreCase("a")) {
-                System.out.println("Tell what you take to fridge: \n");
+                System.out.println("Tell what you add to fridge: \n");
                 String productName = scanner.nextLine();
                 System.out.println("Tell quantity\n");
                 int productQuantity = Integer.parseInt(scanner.nextLine());
                 Products product = new Products(productName, productQuantity);
                 products.add(product);
-                System.out.println("You added " + productQuantity + " " + productName + "(s) to the fridge.");
+                System.out.println("You added " +  productName + " to the fridge.");
+            }
+            if (input.equalsIgnoreCase("r")){
+                System.out.println("Tell what you want to remove from fridge");
+                String productName = scanner.nextLine();
+                products.removeIf(products -> products.name.equalsIgnoreCase(productName));
             }
         }
     }
