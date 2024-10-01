@@ -13,13 +13,8 @@ public class FridgeMain {
         siemens.defrostFreezer();
         siemens.increaseFreezerTemp(4);
         siemens.decreaseFridgeTemp(4);
-
         siemens.addProductFridge();
-
-
-
-
-
+        System.out.println(siemens);
 
     }
 }

@@ -1,5 +1,7 @@
 package home_work_example_1;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -10,7 +12,9 @@ public class Fridge {
     public int capacity;
     public double freezerTemp = -4;
     public double fridgeTemp = 2;
-    public Products product;
+//    public Products product;
+    public List<Products> products = new ArrayList<>();
+
 
     final public double MIN_FRIDGE_TEMP = 2;
     final public double MAX_FRIDGE_TEMP = 10;
@@ -27,11 +31,14 @@ public class Fridge {
     @Override
     public String toString() {
         return "Fridge{" +
-                "brand='" + brand + '\'' +
+                "MIN_FRIDGE_TEMP=" + MIN_FRIDGE_TEMP +
                 ", model='" + model + '\'' +
-                ", price='" + price + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
                 ", capacity=" + capacity +
-                ", MIN_FRIDGE_TEMP=" + MIN_FRIDGE_TEMP +
+                ", fridgeTemp=" + fridgeTemp +
+                ", freezerTemp=" + freezerTemp +
+                ", product=" + products +
                 ", MAX_FRIDGE_TEMP=" + MAX_FRIDGE_TEMP +
                 ", MIN_FREEZER_TEMP=" + MIN_FREEZER_TEMP +
                 ", MAX_FREEZER_TEMP=" + MAX_FREEZER_TEMP +
@@ -42,7 +49,6 @@ public class Fridge {
         System.out.printf("\nYou want to increase fridge temperature %s \n", temp);
         if (temp < 0) {
             System.out.println("It must be a positive number.");
-            ;
             return;
         }
         fridgeTemp += temp;
@@ -56,7 +62,6 @@ public class Fridge {
         System.out.printf("\nYou want to decrease fridge temperature %s \n", temp);
         if (temp < 0) {
             System.out.println("It must be a positive number.");
-            ;
             return;
         }
         fridgeTemp -= temp;
@@ -71,7 +76,6 @@ public class Fridge {
         System.out.printf("\nYou want to increase freezer temperature %s \n", temp);
         if (temp < 0) {
             System.out.println("It must be a positive number.");
-            ;
             return;
         }
         freezerTemp += temp;
@@ -86,7 +90,6 @@ public class Fridge {
         System.out.printf("\nYou want to decrease freezer temperature %s \n", temp);
         if (temp < 0) {
             System.out.println("It must be a positive number.");
-            ;
             return;
         }
         freezerTemp -= temp;
@@ -112,18 +115,21 @@ public class Fridge {
             Scanner scanner = new Scanner(System.in);
             System.out.println("C- Close, A-Add product: \n");
             String input = scanner.nextLine();
+
             if (input.equalsIgnoreCase("c")) {
-                System.out.println("Fridge is close");
+                      System.out.println("Fridge is close");
                 fridgeIsOpen = false;
                 return;
             }
+
             if (input.equalsIgnoreCase("a")) {
                 System.out.println("Tell what you take to fridge: \n");
                 String productName = scanner.nextLine();
                 System.out.println("Tell quantity\n");
                 int productQuantity = Integer.parseInt(scanner.nextLine());
-                product = new Products(productName, productQuantity);
-                System.out.println("You add " + product.name + " to fridge.");
+                Products product = new Products(productName, productQuantity);
+                products.add(product);
+                System.out.println("You added " + productQuantity + " " + productName + "(s) to the fridge.");
             }
         }
     }
