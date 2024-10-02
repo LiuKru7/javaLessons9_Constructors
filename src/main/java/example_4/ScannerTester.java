@@ -18,7 +18,8 @@ public class ScannerTester {
         String name = scanner.nextLine();
         System.out.println("Name : "+ name);
 
-
+        Product product = new Product(name,price,weight);
+        System.out.println(product);
 
 
     }
