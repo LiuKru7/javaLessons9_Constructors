@@ -1,7 +1,7 @@
 package home_work_example_2;
 
 public class BankAccount {
-    public String accountNumber = "LT" + (int) (Math.random() * 10000000);
+    public String accountNumber = "LT" + (int) (Math.random() * 1000000000);
     public String accountHolderName;
     public String accountHolderSurname;
     public double balance;
@@ -82,5 +82,4 @@ public class BankAccount {
         }
         return false;
     }
-
 }

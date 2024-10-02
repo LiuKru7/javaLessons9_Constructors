@@ -14,6 +14,7 @@ public class FridgeMain {
         siemens.increaseFreezerTemp(4);
         siemens.decreaseFridgeTemp(4);
         siemens.openFridge();
+        System.out.println(siemens.products);
         siemens.addProductFridge();
         System.out.println(siemens.products);
 

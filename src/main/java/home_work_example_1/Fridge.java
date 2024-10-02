@@ -5,7 +5,12 @@ import java.util.List;
 import java.util.Scanner;
 
 
+
+
 public class Fridge {
+
+    final private Scanner scanner = new Scanner(System.in);
+
     public String brand;
     public String model;
     public int price;
@@ -100,11 +105,11 @@ public class Fridge {
     }
 
     public void defrostFreezer() {
-        double desiredTemp = freezerTemp;
+        double currentTemp = this.freezerTemp;
         System.out.println("The defrost function is currently active.");
-        freezerTemp = 0;
+        this.freezerTemp = 0;
         System.out.println("Defrosting is complete.");
-        freezerTemp = desiredTemp;
+        this.freezerTemp = currentTemp;
 
     }
     public void openFridge () {
@@ -115,14 +120,11 @@ public class Fridge {
             fridgeIsOpen = true;
             System.out.println("You open the fridge");
         }
-
     }
-
 
     public void addProductFridge() {
         while (fridgeIsOpen) {
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("C- Close, A-Add product: \n");
+            System.out.println("C- Close, A-Add product R- remove: \n");
             String input = scanner.nextLine();
 
 
@@ -133,21 +135,27 @@ public class Fridge {
             }
 
             if (input.equalsIgnoreCase("a")) {
-                System.out.println("Tell what you add to fridge: \n");
-                String productName = scanner.nextLine();
-                System.out.println("Tell quantity\n");
-                int productQuantity = Integer.parseInt(scanner.nextLine());
-                Products product = new Products(productName, productQuantity);
-                products.add(product);
-                System.out.println("You added " +  productName + " to the fridge.");
+                addProduct();
             }
             if (input.equalsIgnoreCase("r")){
-                System.out.println("Tell what you want to remove from fridge");
-                String productName = scanner.nextLine();
-                products.removeIf(products -> products.name.equalsIgnoreCase(productName));
+                removeProduct();
             }
         }
     }
 
+    private void removeProduct() {
+        System.out.println("Tell what you want to remove from fridge");
+        String productName = scanner.nextLine();
+        products.removeIf(products -> products.name.equalsIgnoreCase(productName));
+    }
 
+    private void addProduct() {
+        System.out.println("Tell what you add to fridge: \n");
+        String productName = scanner.nextLine();
+        System.out.println("Tell quantity\n");
+        int productQuantity = Integer.parseInt(scanner.nextLine());
+        Products product = new Products(productName, productQuantity);
+        products.add(product);
+        System.out.println("You added " +  productName + " to the fridge.");
+    }
 }
